@@ -1,6 +1,6 @@
 public with sharing class StringCalculator {
 	
-	public Integer add(String input){
+	public static Integer add(String input){
 		if(String.isBlank(input)){
 			return 0;
 		}
