@@ -5,6 +5,6 @@ public with sharing class StringCalculator {
 			return 0;
 		}
 
-		return null;
+		return Integer.valueOf(input);
 	}
 }
