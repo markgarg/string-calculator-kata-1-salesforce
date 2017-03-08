@@ -4,7 +4,12 @@ public with sharing class StringCalculator {
 		if(String.isBlank(input)){
 			return 0;
 		}
-
-		return Integer.valueOf(input);
+		String[] splitNumbers = input.split(',');
+		Integer sum = 0;
+		for(String splitNum : splitNumbers){
+			sum += Integer.valueOf(splitNum);
+		}
+		
+		return sum;
 	}
 }
