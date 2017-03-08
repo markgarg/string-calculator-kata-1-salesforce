@@ -11,5 +11,8 @@ public with sharing class StringCalculatorKataTest {
 		System.assertEquals(4, result);
 	}
 
-
+	@isTest static void whenTwoNumbersCommaSeparatedReturnSum(){
+		Integer result = StringCalculator.add('4,5');
+		System.assertEquals(9, result);
+	}
 }
